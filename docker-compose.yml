@@ -8,6 +8,7 @@ services:
     ports:
       - 80:80
   frontend:
+    command: tail -f /dev/null
     image: botium/botium-speech-frontend:${TAG}
     restart: always
     environment:
